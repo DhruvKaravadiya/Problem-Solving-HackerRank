@@ -34,7 +34,7 @@ public class Solution {
 //---------------------------------------------------------------------------------
 
 //Solution Number 2:
-//Solution using LinkedList
+//Solution using  '.get(i)' function from LinkedList
 
 /*
 class Result {
