@@ -1,2 +1,2 @@
 # Problem Solving Hacker Rank
-Solved Problems of Algorithms
+Solutions of Problem Solving from HackerRank
