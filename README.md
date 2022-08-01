@@ -1,2 +1,2 @@
 # Problem Solving Hacker Rank
-Solutions of Problem Solving from HackerRank
+Solutions of Problem Solving from HackerRank in JAVA
