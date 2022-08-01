@@ -36,7 +36,7 @@ public class Solution {
 //Solution Number 2:
 //Solution using  '.get(i)' function from LinkedList
 
-/*
+
 class Result {
     public static int simpleArraySum(List<Integer> ar) {   
         int ans = 0;
@@ -68,7 +68,6 @@ public class SimpleArraySumUsingList {
     }
 }
 
-*/
 //---------------------------------------------------------------------
 
 
