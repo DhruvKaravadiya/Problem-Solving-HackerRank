@@ -14,14 +14,11 @@ class Result {
 
     /*
      * Complete the 'gradingStudents' function below.
-     *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY grades as parameter.
      */
 
-    public static List<Integer> gradingStudents(List<Integer> arr, int n) {
-    // Write your code here
-     
+    public static List<Integer> gradingStudents(List<Integer> arr, int n){     
     for(int i = 0 ; i < n ; i++){
         double temp1 = Math.ceil(Double.valueOf(arr.get(i))/5);
             if((temp1*5 - arr.get(i)<3)&&arr.get(i)>37){
@@ -32,14 +29,11 @@ class Result {
         }
     }
 
-
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
         int gradesCount = Integer.parseInt(bufferedReader.readLine().trim());
-
         List<Integer> grades = IntStream.range(0, gradesCount).mapToObj(i -> {
             try {
                 return bufferedReader.readLine().replaceAll("\\s+$", "");
@@ -50,16 +44,13 @@ public class Solution {
             .map(String::trim)
             .map(Integer::parseInt)
             .collect(toList());
-
         List<Integer> result = Result.gradingStudents(grades, gradesCount);
-
         bufferedWriter.write(
             result.stream()
                 .map(Object::toString)
                 .collect(joining("\n"))
             + "\n"
         );
-
         bufferedReader.close();
         bufferedWriter.close();
     }
