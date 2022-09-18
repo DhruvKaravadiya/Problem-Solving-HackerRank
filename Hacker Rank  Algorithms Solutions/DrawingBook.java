@@ -23,7 +23,7 @@ class Result {
 
     public static int pageCount(int n, int p) {
     // Write your code here
-        if( p < n/2 ){
+        if( p <= n/2 ){
             return p/2;
         }
         else{
